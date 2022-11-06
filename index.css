@@ -1,0 +1,42 @@
+.header {
+    text-align: center;
+}
+
+.btn-container, .play {
+    background-color: rgb(4, 4, 56);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 100px;
+    color: white;
+}
+
+button {
+   padding: 10px 20px;
+   border-radius: 15%;
+}
+
+button:hover {
+    background-color: rgb(13, 13, 53);
+    color: beige;
+}
+
+.result {
+    text-align: center;
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+footer {
+    background-color: rgb(49, 44, 37);
+}
+
