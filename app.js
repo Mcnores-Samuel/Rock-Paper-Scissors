@@ -59,14 +59,14 @@ let game = () => {
             playGround(item.textContent.toLowerCase(), getCompChoice());
 
             if(userScore >= 5 && userScore > compScore){
-                result1.textContent = "you won"
+                result1.textContent = "you win"
                 user.style.display = "none"
                 comp.style.display = "none"
                 result.style.display = "none"     
                 
             }
             else if (compScore >= 5 && compScore > userScore){
-                result2.textContent = "computer won"
+                result2.textContent = "computer wins"
                 user.style.display = "none"
                 comp.style.display = "none"
                 result.style.display = "none"  

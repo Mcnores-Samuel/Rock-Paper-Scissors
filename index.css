@@ -23,7 +23,7 @@ body {
 
 button {
    padding: 20px 30px;
-   border-radius: 30%;
+   border-radius: 15%;
 }
 
 button:hover {
@@ -53,8 +53,22 @@ button:hover {
 
 }
 
+.result1 {
+    margin-right: 140px;
+}
+
+.result1, .result2 {
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif
+}
+
 footer {
     background-color: rgb(49, 44, 37);
     height: 100px;
 }
 
+.userScore, .computerScore {
+    margin-left: 45px;
+}
