@@ -27,7 +27,7 @@ button {
 }
 
 button:hover {
-    background-image: url("tamara-menzi-n-vnWQmmVoY-unsplash.jpg");
+    background-color: rgb(44, 8, 8);
     color: beige;
     transition: ease-out 0.4s;
     transform: scale(1.2);
@@ -53,11 +53,8 @@ button:hover {
 
 }
 
-.result1 {
-    margin-right: 140px;
-}
 
-.result1, .result2 {
+.result1, .result2, .result {
     color: white;
     font-size: x-large;
     font-weight: bolder;

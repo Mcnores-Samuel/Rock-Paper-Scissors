@@ -60,6 +60,7 @@ let game = () => {
 
             if(userScore >= 5 && userScore > compScore){
                 result1.textContent = "you win"
+                result2.style.display = "none"
                 user.style.display = "none"
                 comp.style.display = "none"
                 result.style.display = "none"     
@@ -67,6 +68,7 @@ let game = () => {
             }
             else if (compScore >= 5 && compScore > userScore){
                 result2.textContent = "computer wins"
+                result1.style.display = "none"
                 user.style.display = "none"
                 comp.style.display = "none"
                 result.style.display = "none"  
@@ -85,6 +87,8 @@ let game = () => {
  */
 let playGround = (userSelsction, compSelection) => {
     const result = document.querySelector(".result");
+    const result1 = document.querySelector(".result1");
+    const result2 = document.querySelector(".result2");
     const user = document.querySelector(".userScore");
     const comp = document.querySelector(".computerScore")
     if(userSelsction === compSelection){
@@ -92,26 +96,34 @@ let playGround = (userSelsction, compSelection) => {
     }
     else if (userSelsction == "rock"){
         if(compSelection == "scissors"){
-            result.textContent = `user: ${userSelsction}; comp: ${compSelection}`
+            result1.textContent = `You selected: ${userSelsction}`;
+            result2.textContent = `computer selected: ${compSelection}`
+            result.textContent = `you scored: ${userSelsction} beats ${compSelection}`
             userScore++;
             user.textContent = userScore;
 
         }
         else{
-            result.textContent = `user: ${userSelsction}; comp: ${compSelection}`
+            result1.textContent = `You selected: ${userSelsction}`;
+            result2.textContent = `computer selected: ${compSelection}`
+            result.textContent = `computer scored: ${compSelection} beats ${userSelsction}`
             compScore++;
             comp.textContent = compScore;
         }
     }
     else if (userSelsction == "paper"){
         if(compSelection == "rock"){
-            result.textContent = `user: ${userSelsction}; comp: ${compSelection}`
+            result1.textContent = `You selected: ${userSelsction}`;
+            result2.textContent = `computer selected: ${compSelection}`
+            result.textContent = `you scored: ${userSelsction} beats ${compSelection}`
             userScore++;
             user.textContent = userScore;
 
         }
         else {
-            result.textContent = `user: ${userSelsction}; comp: ${compSelection}`
+            result1.textContent = `You selected: ${userSelsction}`;
+            result2.textContent = `computer selected: ${compSelection}`
+            result.textContent = `computer scored: ${compSelection} beats ${userSelsction}`
             compScore++;
             comp.textContent = compScore;
 
@@ -119,13 +131,17 @@ let playGround = (userSelsction, compSelection) => {
     }
     else if (userSelsction == "scissors"){
         if(compSelection == "paper"){
-            result.textContent = `user: ${userSelsction}; comp: ${compSelection}`
+            result1.textContent = `You selected: ${userSelsction}`;
+            result2.textContent = `computer selected: ${compSelection}`
+            result.textContent = `you scored: ${userSelsction} beats ${compSelection}`
             userScore++;
             user.textContent = userScore;
 
         }
         else {
-            result.textContent = `user: ${userSelsction}; comp: ${compSelection}`
+            result1.textContent = `You selected: ${userSelsction}`;
+            result2.textContent = `computer selected: ${compSelection}`
+            result.textContent = `computer scored: ${compSelection} beats ${userSelsction}`
             compScore++;
             comp.textContent = compScore;
         }
