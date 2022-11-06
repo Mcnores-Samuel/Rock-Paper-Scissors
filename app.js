@@ -92,6 +92,8 @@ let playGround = (userSelsction, compSelection) => {
     const user = document.querySelector(".userScore");
     const comp = document.querySelector(".computerScore")
     if(userSelsction === compSelection){
+        result1.textContent = `You selected: ${userSelsction}`;
+        result2.textContent = `computer selected: ${compSelection}`
         result.textContent = result.textContent = `user: ${userSelsction}; comp: ${compSelection} It's a Tie`
     }
     else if (userSelsction == "rock"){
