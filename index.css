@@ -1,5 +1,13 @@
+body {
+    width: 80%;
+    margin: auto;
+    background-image: url("tamara-menzi-n-vnWQmmVoY-unsplash.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .header {
     text-align: center;
+    color: white;
 }
 
 .btn-container, .play {
@@ -14,13 +22,22 @@
 }
 
 button {
-   padding: 10px 20px;
-   border-radius: 15%;
+   padding: 20px 30px;
+   border-radius: 30%;
 }
 
 button:hover {
-    background-color: rgb(13, 13, 53);
+    background-image: url("tamara-menzi-n-vnWQmmVoY-unsplash.jpg");
     color: beige;
+    transition: ease-out 0.4s;
+    transform: scale(1.2);
+}
+
+.restart {
+    margin-bottom: 20px;
+    background-color: rgb(197, 78, 31);
+    padding: 10px 20px;
+    border-radius: 15%;
 }
 
 .result {
@@ -38,5 +55,6 @@ button:hover {
 
 footer {
     background-color: rgb(49, 44, 37);
+    height: 100px;
 }
 

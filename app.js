@@ -27,7 +27,7 @@ function btnContent(){
     let btnText = ["Restart", "rock", "paper", "scissors"];
     let btn = document.body.querySelectorAll("button");
     for(let i = 0; i < btn.length; i++){
-      btn[i].textContent = btnText[i];
+      btn[i].textContent = btnText[i].toUpperCase();
     }
 }
 
@@ -56,7 +56,7 @@ let game = () => {
 
     btn.forEach(item => {
         item.addEventListener("click", () => {
-            playGround(item.textContent, getCompChoice());
+            playGround(item.textContent.toLowerCase(), getCompChoice());
 
             if(userScore >= 5 && userScore > compScore){
                 result1.textContent = "you won"
