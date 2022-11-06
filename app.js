@@ -32,8 +32,8 @@ function btnContent(){
 }
 
 /**
- * 
- * @returns 
+ * This function generate a random string selection as a computer choice
+ * @returns random string selection
  */
 let getCompChoice = () =>{
     let options = ["rock", "paper", "scissors"];
@@ -41,6 +41,11 @@ let getCompChoice = () =>{
     return options[random];
 }
 
+/**
+ * This function is the core operational centre of the whole appliction
+ * initilize a couple of variables and do critical operations on them;
+ * It loops through each and every button selected by the user for further operations
+ */
 let game = () => {
     let user = document.querySelector(".userScore");
     const comp = document.querySelector(".computerScore");
@@ -71,6 +76,13 @@ let game = () => {
 
 }
 
+/**
+ * This function take input from both user and computer to make comparisons.
+ * This comparisons determines further operation to be done in the game function
+ * @param {*} userSelsction is a choice or a selectio by the user
+ * @param {*} compSelection is the choice randomly made by the computer
+ * The score are awarded to the selections in this operation
+ */
 let playGround = (userSelsction, compSelection) => {
     const result = document.querySelector(".result");
     const user = document.querySelector(".userScore");
