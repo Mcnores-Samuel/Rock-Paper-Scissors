@@ -94,7 +94,7 @@ let playGround = (userSelsction, compSelection) => {
     if(userSelsction === compSelection){
         result1.textContent = `You selected: ${userSelsction}`;
         result2.textContent = `computer selected: ${compSelection}`
-        result.textContent = result.textContent = `user: ${userSelsction}; comp: ${compSelection} It's a Tie`
+        result.textContent = `user: ${userSelsction}; comp: ${compSelection} It's a Tie`
     }
     else if (userSelsction == "rock"){
         if(compSelection == "scissors"){
